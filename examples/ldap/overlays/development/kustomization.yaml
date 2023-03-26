@@ -1,0 +1,15 @@
+generatorOptions:
+  disableNameSuffixHash: true
+resources:
+- ../../base
+patchesStrategicMerge:
+ - deployment.yaml
+namePrefix: dev-
+nameSuffix: test
+commonLabels:
+  owner: kenna
+  use: dev
+configMapGenerator:
+- name: env-config
+  files:
+  - config.env
