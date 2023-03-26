@@ -4,4 +4,4 @@ kind: Deployment
 metadata:
   name: ldap
 spec:
-  replicas: 2
+  replicas: 5
